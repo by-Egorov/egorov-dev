@@ -1,0 +1,102 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Users/egorov/Desktop/workspace/react-youtube-lesson/react-beginner-projects"
+		},
+		{
+			"path": "../../../../../Users/egorov/Desktop/workspace/About"
+		},
+		{
+			"path": "../../../../../Users/egorov/Desktop/workspace/GitHub/by-Egorov.github.io"
+		}
+	],
+	"settings": {
+		"editor.fontFamily": "'JetBrains Mono', monospace",
+		"security.workspace.trust.enabled": false,
+		"workbench.startupEditor": "newUntitledFile",
+		"editor.minimap.enabled": false,
+		"editor.smoothScrolling": true,
+		"files.autoSave": "afterDelay",
+		"files.defaultLanguage": "html",
+		"editor.detectIndentation": false,
+		"editor.wordWrap": "on",
+		"editor.glyphMargin": false,
+		"editor.hover.enabled": false,
+		"editor.lineHeight": 23,
+		"editor.insertSpaces": false,
+		"editor.linkedEditing": true,
+		"ecsstractor_port.add_comment": false,
+		"ecsstractor_port.empty_line_before_nested_selector": false,
+		"ecsstractor_port.bem_nesting": true,
+		"liveServer.settings.donotVerifyTags": true,
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "~/../css"
+			}
+		],
+		"liveSassCompile.settings.excludeList": [
+			"/**/node_modules/**",
+			"/.vscode/**"
+		],
+		// "workbench.productIconTheme": "bootstrap-product-icons",
+		// "workbench.iconTheme": "material-icon-theme",
+		"explorer.confirmDragAndDrop": false,
+		"editor.tabSize": 3,
+		"editor.fontSize": 16,
+		// "editor.fontFamily": "JetBrains Mono, monospace",
+		// "editor.fontFamily": "'Comic Sans MS', sans-serif",
+		"liveServer.settings.donotShowInfoMsg": true,
+		"editor.cursorStyle": "underline",
+		"editor.cursorSmoothCaretAnimation": true,
+		"editor.cursorBlinking": "phase",
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"editor.multiCursorModifier": "ctrlCmd",
+		"[javascript]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features"
+		},
+		"[css]": {
+			"editor.defaultFormatter": "vscode.css-language-features"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[html]": {
+			"editor.defaultFormatter": "vscode.html-language-features"
+		},
+		"editor.matchBrackets": "never",
+		"editor.guides.bracketPairs": true,
+		"vsicons.dontShowNewVersionMessage": true,
+		"terminal.integrated.letterSpacing": 1,
+		"terminal.integrated.fontSize": 15,
+		"redhat.telemetry.enabled": true,
+		"liveSassCompile.settings.autoprefix": [],
+		"prettier.tabWidth": 3,
+		"prettier.useTabs": true,
+		"editor.guides.indentation": false,
+		"workbench.colorCustomizations": {
+			"editorCursor.foreground": "#fff",
+			"terminalCursor.foreground": "#FF7B4E",
+			"editorCursor.background": "#000",
+			"terminalCursor.background": "#000",
+			"foreground": "#c0c0c0"
+		},
+		"[scss]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"explorer.confirmDelete": false,
+		"parameterHints.hintingType": "variableOnly",
+		"workbench.colorTheme": "One Dark Pro",
+		"liveServer.settings.multiRootWorkspaceName": "about-me",
+		"breadcrumbs.filePath": "off",
+		"liveServer.settings.wait": 1,
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		 },
+		 "emmet.syntaxProfiles": {
+			"javascript": "jsx",
+		 }		 
+	}
+}
