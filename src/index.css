@@ -193,7 +193,47 @@ ul {
 
 @media only screen and (min-device-width: 425px) {
 	.header {
+		width: 100%;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
+	}
+
+	.logo-svg svg {
+		width: 200px;
+		height: 74px;
+	}
+
+	.social__list {
+		font-size: 18px;
+	}
+
+	.content {
+		display: grid;
+		grid-template-areas: "title about about"
+			"photo about about";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.content__photo {
+		display: flex;
+		align-self: center;
+		width: 600px;
+		display: flex;
+		grid-area: photo;
+	}
+
+	.content__about {
+		grid-area: about;
+	}
+
+	.about-text {
+		grid-area: about-text;
+	}
+
+	.content__photo img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }

@@ -4,30 +4,30 @@ import myPhoto from './images/myPhoto.jpg'
 const Body = () => {
 	return (
 		<div className='content'>
-			<div className="content__title">
+			{/* <div className="content__title">
 				<h1>Егоров Александр</h1>
-			</div>
-			<div class="content__photo">
-				<div class="content__photo--img">
+			</div> */}
+			<div className='content__photo'>
+				<div className='content__photo--img'>
 					<img src={myPhoto} alt="my photo" />
 				</div>
 			</div>
-			<div class="content__about">
-				<div class="content__about_skills">
-					<div class="content__about_skills--title">
+			<div className="content__about">
+				<div className="content__about_skills">
+					<div className="content__about_skills--title">
 						<h2>О себе:</h2>
 					</div>
-					<div class="content__about_skills--body">
+					<div className="content__about_skills--body">
 						<p>
-							Начинающий frontend-разработчик.
+							Меня зовут Егоров Александр, я начинающий frontend-разработчик.
 						</p>
 						<p>
-							Уверенно владею <span class="html">HTML</span>, <span class="css">CSS</span>, <span
-								class="scss">Scss</span>. Использую и понимаю методологию <b>'BEM'</b>, систему контроля версий <b>'Git'</b>. Изучил основы <span
-									class="js">JavaScript</span>, работу с <b>'DOM'</b>-элементами. Основы библиотек <span class="
-								library">React</span> и <span class="
-								library">jQuery</span>. Знаком с фреймворками <span class="framework">Tailwind</span> и <span
-								class="framework">Bootstrap</span>.
+							Уверенно владею <span className="html">HTML</span>, <span className="css">CSS</span>, <span
+								className="scss">Scss</span>. Использую и понимаю методологию <b>'BEM'</b>, систему контроля версий <b>'Git'</b>. Изучил основы <span
+									className="js">JavaScript</span>, работу с <b>'DOM'</b>-элементами. Основы библиотек <span className="
+								library">React</span> и <span className="
+								library">jQuery</span>. Знаком с фреймворками <span className="framework">Tailwind</span> и <span
+								className="framework">Bootstrap</span>.
 						</p>
 						<p>
 							Быстро обучаюсь и нахожу решение сложных задач. Трудности с которыми сталкиваюсь в работе с тем
