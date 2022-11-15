@@ -4,12 +4,9 @@ import myPhoto from './images/myPhoto.jpg'
 const Body = () => {
 	return (
 		<div className='content'>
-			{/* <div className="content__title">
-				<h1>Егоров Александр</h1>
-			</div> */}
 			<div className='content__photo'>
 				<div className='content__photo--img'>
-					<img src={myPhoto} alt="my photo" />
+					<img src={myPhoto} alt="Egorov" />
 				</div>
 			</div>
 			<div className="content__about">

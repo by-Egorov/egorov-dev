@@ -1,0 +1,246 @@
+body {
+	margin: 0;
+	font-family: 'Source Code Pro', monospace, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #c3c3c3;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.html {
+	color: green;
+}
+
+.css {
+	color: blue;
+}
+
+.scss {
+	color: red;
+}
+
+.js {
+	color: orangered;
+}
+
+.library {
+	color: aqua;
+}
+
+.framework {
+	text-decoration: underline;
+}
+
+/* About */
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	box-sizing: border-box;
+}
+
+/* Header */
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 15px;
+	@media only screen and (min-device-width: 425px) {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+.social {
+	&__list {
+		display: flex;
+		column-gap: 20px;
+		font-size: 14px;
+		@media only screen and (min-device-width: 425px) {
+			font-size: 18px;
+		}
+	}
+	&__item {
+		& span {
+			color: red;
+		}
+	}
+	&__link {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			width: 0%;
+			height: 2px;
+			background: orangered;
+			transform: translateX(-50%);
+			transition: width 0.3s ease-in-out;
+		}
+		&:hover:after {
+			transition: width 0.3s ease-in-out;
+			width: 75%;
+		}
+	}
+}
+
+/* Content */
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+	&__photo {
+		@media only screen and (min-device-width: 425px) {
+			display: flex;
+			align-self: center;
+			width: 600px;
+			display: flex;
+			grid-area: photo;
+		}
+	}
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__photo--img {
+		position: relative;
+		width: 100%;
+		height: 480px;
+		border-radius: 27px;
+		overflow: hidden;
+		& img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@media only screen and (min-device-width: 425px) {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+	&__about {
+		margin-top: 15px;
+		@media only screen and (min-device-width: 425px) {
+			grid-area: about;
+		}
+	}
+	&__about_skills--title {
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__about_skills--body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+		padding: 15px 10px;
+	}
+	@media only screen and (min-device-width: 425px) {
+		display: grid;
+		grid-template-areas:
+			'title about about'
+			'photo about about';
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
+/* Footer */
+.footer {
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+	font-size: 14px;
+	height: 50px;
+	border-top: 1px solid #333;
+	&__contacts {
+		display: flex;
+		transition: color 0.2s ease-in;
+		cursor: pointer;
+		@media only screen and (min-device-width: 425px) {
+			display: flex;
+			align-items: center;
+		}
+		&:hover {
+			transition: color 0.2s ease-in;
+			color: green;
+			& i {
+				transition: color 0.2s ease-in;
+				color: green;
+			}
+		}
+	}
+	& i {
+		transition: color 0.2s ease-in;
+		font-size: 18px;
+		padding-right: 5px;
+		@media only screen and (min-device-width: 425px) {
+			display: block;
+			font-size: 28px;
+		}
+	}
+	&__social {
+		display: flex;
+		column-gap: 10px;
+		cursor: pointer;
+		@media only screen and (min-device-width: 425px) {
+			column-gap: 30px;
+		}
+	}
+	@media only screen and (min-device-width: 425px) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #333;
+		justify-content: space-around;
+		font-size: 18px;
+		color: #fff;
+	}
+}
+
+.social-links {
+	font-size: 16px;
+	transition: color 0.2s ease-in;
+	&:hover {
+		color: orangered;
+		transition: color 0.2s ease-in;
+	}
+	@media only screen and (min-device-width: 425px) {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-device-width: 425px) {
+	.logo-svg svg {
+		width: 200px;
+		height: 74px;
+	}
+
+	.about-text {
+		grid-area: about-text;
+	}
+}
